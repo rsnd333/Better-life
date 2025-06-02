@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "aboreto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#all {
+    background-color: #f8edeb;
+}
+
+.container {
+    max-width: 64em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+header,
+footer {
+    background-color: #bde0fe;
+    padding-top: 1.56em;
+    color: #0d1b2a;
+    font-weight: bold;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header>.container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+nav {
+    background-color: #0077b6;
+    padding: 1em 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-hamburguer {
+    width: 2em;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 0.12em;
+    width: 100%;
+    background-color: #0d1b2a;
+    display: block;
+    margin-bottom: 0.25em;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre img {
+    max-width: 17em;
+    margin-right: 1.8em;
+}
+
+#sobre h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#sobre p {
+    font-size: 1.3em;
+    letter-spacing: 0.04em;
+    line-height: 1.7em;
+}
+
+section {
+    padding: 2.5em 0;
+}
+
+section h2 {
+    margin-bottom: 1em;
+}
+
+.lista-oleos {
+    flex-wrap: wrap;
+}
+
+.lista-oleos li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 1.5em;
+}
+
+.lista-oleos li img {
+    max-width: 100%;
+}
+
+.lista-oleos li h3 {
+    margin: 1em 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.5em 0;
+    border: none;
+    background-color: #4a4e69;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 0.37em;
+}
+
+.lista-oleos li strong {
+    margin: 1em 0;
+    display: block;
+}
+
+.price {
+    margin: 1em 0;
+    display: block;
+}
+
+.price del {
+    color: gray;
+    font-size: 0.87em;
+}
+
+.form-campo {
+    margin-bottom: 1em;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 0.5em;
+    border-radius: 0.62em;
+    font-weight: bolder;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 7.75em;
+    border-radius: 0.62em;
+}
+
+form {
+    max-width: 22.5em;
+}
+
+form button {
+    max-width: 7.5em;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 1em;
+}
+
+footer li img {
+    height: 2em;
+}
+
+footer .container {
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+@media screen and (max-width:767px) {
+
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    header h1 {
+        margin-right: 0.25em;
+    }
+
+    nav li {
+        list-style: none;
+        display: block;
+        margin: 0 1em 0.7em 0;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .cell {
+        display: block;
+    }
+
+    #sobre img {
+        max-width: 20em;
+        max-height: 25em;
+        height: 100%;
+        width: 100%;
+        padding: 1em;
+        display: block;
+    }
+
+    #sobre h2 {
+        font-size: 1.56em;
+        font-weight: bold;
+        padding: 1em;
+    }
+
+    #sobre p {
+        font-size: 1em;
+        letter-spacing: 0.06em;
+        padding: 1em;
+    }
+
+    #oleos h2 {
+        margin: 0 5% 5% 5%;
+    }
+
+    .lista-oleos li {
+        list-style: none;
+        max-width: 95%;
+        margin: 0 5%;
+    }
+
+    .lista-oleos li img {
+        max-width: 95%;
+    }
+
+    #difusores h2 {
+        margin: 0 5% 5% 5%;
+    }
+
+    .difusor {
+        max-width: 50%;
+        width: 100%;
+    }
+
+    .lista-oleos li h3 {
+        margin: 1em 0;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        padding: 0.5em 0;
+        border: none;
+        background-color: #4a4e69;
+        color: #fff;
+        font-size: 1em;
+        font-weight: bold;
+        font-style: italic;
+        cursor: pointer;
+        border-radius: 0.35em;
+        margin-bottom: 2em;
+    }
+
+    .lista-oleos li strong {
+        margin: 1em 0;
+        display: block;
+    }
+
+    .price {
+        margin: 1em 0;
+        display: block;
+    }
+
+    .price del {
+        color: gray;
+        font-size: 1em;
+    }
+
+    #contato {
+        margin: 0 4%;
+    }
+
+    footer p,
+    li {
+        margin: 1em 0 0 1em;
+        list-style: none;
+    }
+
+    footer .container {
+        display: block;
+        padding-bottom: 1em;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    .cell {
+        padding: 2em;
+        display: block;
+    }
+
+    section {
+        display: flex;
+    }
+
+    #sobre img {
+        max-width: 60%;
+        max-height: 40%;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    #sobre h2 {
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    #sobre p {
+        font-size: 1.3em;
+        letter-spacing: 0.04em;
+        line-height: 1.7em;
+    }
+
+    #oleos h2 {
+        margin: 0 5%;
+        font-size: 2em;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid li {
+        max-width: 90%;
+        width: 100%;
+    }
+
+    .grid .item-central {
+        margin: 0;
+    }
+
+    .grid li h3,
+    h4,
+    p,
+    strong {
+        font-size: 1.3em;
+    }
+
+    .grid button {
+        font-size: 1em;
+        margin-bottom: 2em;
+    }
+
+    #difusores h2{
+        margin: 0 0 5% 5%;
+        font-size: 2em;
+    }
+
+    #difusores li {
+        max-width: 60%;
+        width: 100%;
+        margin: 0 5%;
+    }
+
+    #difusores li h3,
+    h4,
+    p,
+    strong {
+        font-size: 1.3em;
+    }
+
+    #difusores button {
+        font-size: 1em;
+        margin-bottom: 2em;
+    }
+
+    #contato {
+        margin: 0 5%;
+    }
+
+    form {
+        font-size: 1.3em;
+    }
+
+    footer p,
+    li {
+        margin: 1em 0 0 1em;
+        list-style: none;
+    }
+
+}
